@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon128.png">
+<title>TKTT SadLab LIVE</title>
+<link rel="stylesheet" href="live.css">
+<link rel="stylesheet" href="panel.css">
+</head>
+<body>
+<div id="backdrop"><img alt=""></div>
+<div id="viewport">
+  <main id="stage" aria-label="TKTT SadLab DJ LIVE 1080x1920">
+    <div class="bg" id="bgA"><img alt=""><video muted loop playsinline preload="auto" hidden></video></div>
+    <div class="bg" id="bgB"><img alt=""><video muted loop playsinline preload="auto" hidden></video></div>
+    <div id="noImage" hidden><strong>ห้องนี้ยังไม่มีภาพฉาก</strong><span id="noImageName"></span><small>เพิ่มภาพได้ที่ Control Center › Room Themes</small></div>
+
+    <div id="ui">
+      <section id="booth" aria-label="ข้อมูลเพลงบนแท่น DJ">
+        <div class="cover"><img id="cover" src="assets/default_cover.jpg" alt=""></div>
+        <div class="info">
+          <div class="status" id="songStatus">○ รอเชื่อม YouTube Music</div>
+          <div class="title" id="songTitle">รอเพลงจาก YouTube Music</div>
+          <div class="artist" id="songArtist">TKTT SadLab</div>
+          <div class="progress-row"><div class="progress"><div id="progressFill"></div></div><span id="songTime">00:00 / 00:00</span></div>
+        </div>
+        <div class="eq">
+          <div class="bars" id="bars"></div>
+          <div class="eq-badge" id="eqBadge">EQ</div>
+        </div>
+      </section>
+    </div>
+
+    <div id="guides" hidden>
+      <div class="zone top"><span>พื้นที่ UI TikTok ด้านบน (ชื่อบัญชี/ผู้ชม)</span></div>
+      <div class="zone right"><span>ปุ่ม/ของขวัญ</span></div>
+      <div class="zone bottom"><span>Safe Zone ล่าง — แชทและปุ่มของ TikTok LIVE</span></div>
+    </div>
+  </main>
+</div>
+<button id="tapStart" hidden>แตะเพื่อเริ่ม<br><small>เต็มจอ • ไม่ให้หน้าจอดับ • เปิด EQ</small></button>
+<button id="gearBtn" hidden aria-label="ตั้งค่า">⚙ ตั้งค่า</button>
+<div id="panel" hidden></div>
+<script src="shared/core-local.js"></script>
+<script src="shared/audio-engine.js"></script>
+<script src="shared/rooms.js"></script>
+<script src="live.js"></script>
+<script src="panel.js"></script>
+</body>
+</html>

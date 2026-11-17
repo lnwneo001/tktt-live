@@ -1,0 +1,26 @@
+#gearBtn{position:fixed;z-index:110;left:50%;bottom:12%;transform:translateX(-50%);padding:12px 26px;border-radius:30px;border:1px solid #6b5aa8;background:#1c2041;color:#fff;font:700 18px "Leelawadee UI","Noto Sans Thai",sans-serif}
+#gearBtn[hidden]{display:none}
+#panel{position:fixed;inset:0;z-index:120;background:rgba(4,5,14,.82);overflow:auto;padding:14px;-webkit-overflow-scrolling:touch}
+#panel[hidden]{display:none}
+.pn-card{max-width:520px;margin:0 auto;background:#141733;border:1px solid #2f3566;border-radius:16px;padding:14px;color:#eef0ff;font:15px/1.5 "Leelawadee UI","Noto Sans Thai",sans-serif}
+.pn-head{display:flex;justify-content:space-between;align-items:center;font-size:18px}
+.pn-head b{color:#ff5fc4}
+.pn-x{border:0;background:none;color:#fff;font-size:22px}
+.pn-card h4{margin:14px 0 6px;color:#7fe4ff}
+.pn-rooms{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.pn-room{position:relative;padding:0;border:2px solid #2f3566;border-radius:12px;overflow:hidden;background:#0f1230;color:#fff;aspect-ratio:3/4}
+.pn-room img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
+.pn-room.on{border-color:#38d6ff;box-shadow:0 0 12px rgba(56,214,255,.5)}
+.pn-lbl{position:absolute;left:0;right:0;bottom:0;padding:14px 4px 5px;font-size:13px;font-weight:700;background:linear-gradient(transparent,rgba(5,6,18,.92))}
+.pn-row{display:flex;align-items:center;gap:8px;margin:8px 0;flex-wrap:wrap}
+.pn-row input[type=range]{flex:1;accent-color:#38d6ff}
+.pn-row input[type=checkbox]{width:20px;height:20px;accent-color:#ff5fc4}
+.pn-num{width:64px;padding:6px;border-radius:8px;border:1px solid #3a4290;background:#0f1230;color:#fff;font:inherit}
+.pn-text{display:block;width:100%;margin:6px 0;padding:10px;border-radius:10px;border:1px solid #3a4290;background:#0f1230;color:#fff;font:inherit}
+.pn-card select{width:100%;padding:9px;border-radius:9px;border:1px solid #3a4290;background:#0f1230;color:#fff;font:inherit}
+.pn-seg{display:flex;border:1px solid #3a4290;border-radius:11px;overflow:hidden}
+.pn-seg button{flex:1;padding:10px 4px;border:0;background:#161a3c;color:#fff;font:600 14px inherit}
+.pn-seg button+button{border-left:1px solid #3a4290}
+.pn-seg button.on{background:linear-gradient(100deg,#c8358f,#6750d0)}
+.pn-hint{color:#9aa1c4;font-size:12.5px;margin:6px 0}
+.pn-go{display:block;width:100%;margin-top:14px;padding:12px;border:0;border-radius:12px;background:linear-gradient(100deg,#d23a95,#6d54d6);color:#fff;font:700 16px inherit}
